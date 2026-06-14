@@ -234,6 +234,351 @@ span{
 
 
 
+/* experience section */
+.experience {
+    background: var(--bg-color);
+}
+
+.experience h2 {
+    margin-bottom: 5rem;
+}
+
+.exp-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.exp-box {
+    background: var(--snd-bg-color);
+    padding: 2.5rem;
+    border-radius: 1rem;
+    border-left: 4px solid var(--main-color);
+    transition: 0.3s ease;
+}
+
+.exp-box:hover {
+    transform: translateX(10px);
+    box-shadow: 0 0 2rem rgba(0, 127, 115, 0.2);
+}
+
+.exp-header h3 {
+    font-size: 2.2rem;
+    color: var(--main-color);
+    margin-bottom: 0.5rem;
+}
+
+.exp-header .company {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.exp-header .duration {
+    font-size: 1.4rem;
+    color: #666;
+    margin-top: 0.3rem;
+}
+
+.exp-content {
+    list-style: none;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+.exp-content li {
+    margin: 0.8rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.exp-content li:before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: var(--main-color);
+}
+
+/* projects section */
+.projects {
+    background: var(--bg-color);
+}
+
+.projects h2 {
+    margin-bottom: 5rem;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+}
+
+.project-box {
+    background: var(--snd-bg-color);
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    transition: 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.project-box:hover {
+    border-color: var(--main-color);
+    transform: translateY(-10px);
+    box-shadow: 0 1rem 2rem rgba(0, 127, 115, 0.3);
+}
+
+.project-icon {
+    font-size: 4rem;
+    color: var(--main-color);
+    margin-bottom: 1rem;
+}
+
+.project-box h3 {
+    font-size: 2rem;
+    color: var(--text-color);
+    margin-bottom: 0.8rem;
+}
+
+.tech-stack {
+    font-size: 1.3rem;
+    color: var(--main-color);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.project-desc {
+    font-size: 1.5rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* skills section */
+.skills {
+    background: var(--snd-bg-color);
+}
+
+.skills h2 {
+    margin-bottom: 5rem;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    gap: 2rem;
+}
+
+.skills-box {
+    background: var(--bg-color);
+    padding: 2.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+}
+
+.skills-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 1rem 2rem rgba(0, 127, 115, 0.3);
+}
+
+.skills-box h3 {
+    font-size: 1.8rem;
+    color: var(--main-color);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.skills-box h3 i {
+    font-size: 2.2rem;
+}
+
+.skills-box p {
+    font-size: 1.5rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* education section */
+.education {
+    background: var(--bg-color);
+}
+
+.education h2 {
+    margin-bottom: 5rem;
+}
+
+.edu-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.edu-box {
+    background: var(--snd-bg-color);
+    padding: 2.5rem;
+    border-radius: 1rem;
+    border-top: 4px solid var(--main-color);
+    transition: 0.3s ease;
+}
+
+.edu-box:hover {
+    box-shadow: 0 1rem 2rem rgba(0, 127, 115, 0.3);
+    transform: translateY(-5px);
+}
+
+.edu-header h3 {
+    font-size: 2rem;
+    color: var(--main-color);
+    margin-bottom: 0.5rem;
+}
+
+.edu-header .institution {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.edu-header .duration {
+    font-size: 1.4rem;
+    color: #666;
+    margin-top: 0.3rem;
+}
+
+.cgpa {
+    font-size: 1.5rem;
+    color: var(--main-color);
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.certificates {
+    background: var(--snd-bg-color);
+    padding: 2.5rem;
+    border-radius: 1rem;
+    margin-top: 2rem;
+}
+
+.certificates h3 {
+    font-size: 2.2rem;
+    color: var(--main-color);
+    margin-bottom: 2rem;
+}
+
+.cert-list {
+    list-style: none;
+}
+
+.cert-list li {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    padding-left: 2rem;
+    position: relative;
+}
+
+.cert-list li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+/* contact section */
+.contact {
+    background: var(--snd-bg-color);
+}
+
+.contact h2 {
+    margin-bottom: 5rem;
+}
+
+.contact-container {
+    max-width: 80rem;
+}
+
+.contact-info h3 {
+    font-size: 2.5rem;
+    color: var(--main-color);
+    margin-bottom: 2rem;
+}
+
+.contact-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 2rem;
+}
+
+.contact-box {
+    background: var(--bg-color);
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    transition: 0.3s ease;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+
+.contact-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 1rem 2rem rgba(0, 127, 115, 0.3);
+}
+
+.contact-box i {
+    font-size: 3rem;
+    color: var(--main-color);
+    margin-bottom: 1rem;
+}
+
+.contact-box h4 {
+    font-size: 1.8rem;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+.contact-box p {
+    font-size: 1.5rem;
+    color: #666;
+}
+
+.contact-box a {
+    color: var(--main-color);
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.contact-box a:hover {
+    text-decoration: underline;
+}
+
+/* about details */
+.about-details {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: rgba(0, 127, 115, 0.1);
+    border-radius: 0.8rem;
+}
+
+.about-details p {
+    font-size: 1.5rem;
+    margin: 0.8rem 0;
+}
+
+.about-details strong {
+    color: var(--main-color);
+}
+
+/* footer */
+.footer {
+    background: var(--main-color);
+    color: var(--bg-color);
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.5rem;
+}
+
 /* services css */
 
 .services h2{
